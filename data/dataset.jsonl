@@ -1,0 +1,101 @@
+{"prompt": "def soma(a, b):", "completion": "\n    return a + b"}
+{"prompt": "def subtrai(a, b):", "completion": "\n    return a - b"}
+{"prompt": "def multiplica(a, b):", "completion": "\n    return a * b"}
+{"prompt": "def divide(a, b):", "completion": "\n    return a / b if b != 0 else None"}
+{"prompt": "for i in range(5):", "completion": "\n    print(i)"}
+{"prompt": "if x > 0:", "completion": "\n    print('Positive')\nelse:\n    print('Non-positive')"}
+{"prompt": "while n > 0:", "completion": "\n    n -= 1\n    print(n)"}
+{"prompt": "def fatorial(n):", "completion": "\n    if n == 0:\n        return 1\n    return n * fatorial(n-1)"}
+{"prompt": "def fibonacci(n):", "completion": "\n    a, b = 0, 1\n    for _ in range(n):\n        a, b = b, a + b\n    return a"}
+{"prompt": "with open('file.txt', 'r') as f:", "completion": "\n    lines = f.readlines()\n    print(lines)"}
+{"prompt": "class Pessoa:", "completion": "\n    def __init__(self, nome, idade):\n        self.nome = nome\n        self.idade = idade"}
+{"prompt": "p = Pessoa('Joao', 18)", "completion": "\nprint(p.nome, p.idade)"}
+{"prompt": "try:", "completion": "\n    x = 10 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero')"}
+{"prompt": "numbers = [1,2,3,4,5]", "completion": "\nsquared = [x**2 for x in numbers]\nprint(squared)"}
+{"prompt": "def is_even(n):", "completion": "\n    return n % 2 == 0"}
+{"prompt": "import math", "completion": "\nprint(math.sqrt(16))"}
+{"prompt": "def greet(name):", "completion": "\n    print(f'Hello {name}!')"}
+{"prompt": "for key, value in dict.items():", "completion": "\n    print(key, value)"}
+{"prompt": "def reverse_string(s):", "completion": "\n    return s[::-1]"}
+{"prompt": "def sum_list(lst):", "completion": "\n    return sum(lst)"}
+{"prompt": "public class HelloWorld {", "completion": "\n    public static void main(String[] args) {\n        System.out.println('Hello World');\n    }\n}"}
+{"prompt": "int soma(int a, int b) {", "completion": "\n    return a + b;\n}"}
+{"prompt": "for(int i = 0; i < 5; i++) {", "completion": "\n    System.out.println(i);\n}"}
+{"prompt": "if(x > 0) {", "completion": "\n    System.out.println('Positive');\n} else {\n    System.out.println('Non-positive');\n}"}
+{"prompt": "while(n > 0) {", "completion": "\n    n--;\n    System.out.println(n);\n}"}
+{"prompt": "public int multiply(int a, int b) {", "completion": "\n    return a * b;\n}"}
+{"prompt": "String reverse(String s) {", "completion": "\n    return new StringBuilder(s).reverse().toString();\n}"}
+{"prompt": "try {", "completion": "\n    int x = 10 / 0;\n} catch(ArithmeticException e) {\n    System.out.println('Cannot divide by zero');\n}"}
+{"prompt": "ArrayList<Integer> numbers = new ArrayList<>();", "completion": "\nnumbers.add(1);\nnumbers.add(2);\nSystem.out.println(numbers);"}
+{"prompt": "class Person {", "completion": "\n    String name;\n    int age;\n    Person(String name, int age) {\n        this.name = name;\n        this.age = age;\n    }\n}"}
+{"prompt": "Person p = new Person('Joao', 18);", "completion": "\nSystem.out.println(p.name + ' ' + p.age);"}
+{"prompt": "public boolean isEven(int n) {", "completion": "\n    return n % 2 == 0;\n}"}
+{"prompt": "int[] arr = {1,2,3,4,5};", "completion": "\nfor(int num : arr) {\n    System.out.println(num);\n}"}
+{"prompt": "public int sumArray(int[] arr) {", "completion": "\n    int sum = 0;\n    for(int n : arr) sum += n;\n    return sum;\n}"}
+{"prompt": "List<Integer> squared = arr.stream().map(n -> n*n).collect(Collectors.toList());", "completion": "\nSystem.out.println(squared);"}
+{"prompt": "def power(a, b):", "completion": "\n    return a ** b"}
+{"prompt": "def greet_all(names):", "completion": "\n    for n in names:\n        print(f'Hello {n}!')"}
+{"prompt": "public void greetAll(List<String> names) {", "completion": "\n    for(String n : names) {\n        System.out.println('Hello ' + n + '!');\n    }\n}"}
+{"prompt": "int factorial(int n) {", "completion": "\n    if(n == 0) return 1;\n    return n * factorial(n-1);\n}"}
+{"prompt": "def count_vowels(s):", "completion": "\n    return sum(1 for c in s if c.lower() in 'aeiou')"}
+{"prompt": "String reverseWords(String s) {", "completion": "\n    return Arrays.stream(s.split(' ')).map(word -> new StringBuilder(word).reverse().toString()).collect(Collectors.joining(' '));\n}"}
+{"prompt": "def flatten_list(lst):", "completion": "\n    return [item for sublist in lst for item in sublist]"}
+{"prompt": "def remove_duplicates(lst):", "completion": "\n    return list(set(lst))"}
+{"prompt": "public List<Integer> flattenList(List<List<Integer>> lst) {", "completion": "\n    return lst.stream().flatMap(List::stream).collect(Collectors.toList());\n}"}
+{"prompt": "public List<Integer> removeDuplicates(List<Integer> lst) {", "completion": "\n    return lst.stream().distinct().collect(Collectors.toList());\n}"}
+{"prompt": "def max_in_list(lst):", "completion": "\n    return max(lst)"}
+{"prompt": "def min_in_list(lst):", "completion": "\n    return min(lst)"}
+{"prompt": "public int maxInArray(int[] arr) {", "completion": "\n    return Arrays.stream(arr).max().getAsInt();\n}"}
+{"prompt": "public int minInArray(int[] arr) {", "completion": "\n    return Arrays.stream(arr).min().getAsInt();\n}"}
+{"prompt": "def sum_even(lst):", "completion": "\n    return sum(x for x in lst if x % 2 == 0)"}
+{"prompt": "public int sumEven(int[] arr) {", "completion": "\n    return Arrays.stream(arr).filter(x -> x % 2 == 0).sum();\n}"}
+{"prompt": "def greet_person(name, age):", "completion": "\n    print(f'{name} is {age} years old')"}
+{"prompt": "public void greetPerson(String name, int age) {", "completion": "\n    System.out.println(name + ' is ' + age + ' years old');\n}"}
+{"prompt": "def greet_user(username):", "completion": "\n    print(f'Welcome, {username}!')"}
+{"prompt": "def square_numbers(lst):", "completion": "\n    return [x**2 for x in lst]"}
+{"prompt": "def even_numbers(lst):", "completion": "\n    return [x for x in lst if x % 2 == 0]"}
+{"prompt": "def factorial_iter(n):", "completion": "\n    result = 1\n    for i in range(1, n+1):\n        result *= i\n    return result"}
+{"prompt": "def count_words(text):", "completion": "\n    return len(text.split())"}
+{"prompt": "def merge_dicts(d1, d2):", "completion": "\n    return {**d1, **d2}"}
+{"prompt": "def find_max(lst):", "completion": "\n    return max(lst)"}
+{"prompt": "def find_min(lst):", "completion": "\n    return min(lst)"}
+{"prompt": "class Car:", "completion": "\n    def __init__(self, brand, model):\n        self.brand = brand\n        self.model = model"}
+{"prompt": "c = Car('Toyota', 'Corolla')", "completion": "\nprint(c.brand, c.model)"}
+{"prompt": "public class Calculator {", "completion": "\n    public int add(int a, int b) {\n        return a + b;\n    }\n}"}
+{"prompt": "public int subtract(int a, int b) {", "completion": "\n    return a - b;\n}"}
+{"prompt": "public int multiply(int a, int b) {", "completion": "\n    return a * b;\n}"}
+{"prompt": "public int divide(int a, int b) {", "completion": "\n    return b != 0 ? a / b : 0;\n}"}
+{"prompt": "for(int i = 0; i < arr.length; i++) {", "completion": "\n    System.out.println(arr[i]);\n}"}
+{"prompt": "try {", "completion": "\n    int x = arr[10];\n} catch(ArrayIndexOutOfBoundsException e) {\n    System.out.println('Out of bounds');\n}"}
+{"prompt": "int[] numbers = {1,2,3,4,5};", "completion": "\nint sum = 0;\nfor(int n : numbers) sum += n;\nSystem.out.println(sum);"}
+{"prompt": "document.getElementById('btn').addEventListener('click', function() {", "completion": "\n    alert('Button clicked!');\n});"}
+{"prompt": "function add(a, b) {", "completion": "\n    return a + b;\n}"}
+{"prompt": "const nums = [1,2,3,4,5];", "completion": "\nconst squared = nums.map(n => n * n);\nconsole.log(squared);"}
+{"prompt": "for(let i = 0; i < 5; i++) {", "completion": "\n    console.log(i);\n}"}
+{"prompt": "function isEven(n) {", "completion": "\n    return n % 2 === 0;\n}"}
+{"prompt": "<!DOCTYPE html>", "completion": "\n<html>\n<head>\n<title>Page Title</title>\n</head>\n<body>\n</body>\n</html>"}
+{"prompt": "<div id='container'>", "completion": "\n    <p>Hello World</p>\n</div>"}
+{"prompt": "function greetUser(name) {", "completion": "\n    console.log(`Hello, ${name}!`);\n}"}
+{"prompt": "def flatten_dict(d):", "completion": "\n    return {k:v for sub in d.values() for k,v in sub.items()}"} 
+{"prompt": "def remove_none(lst):", "completion": "\n    return [x for x in lst if x is not None]"} 
+{"prompt": "def join_strings(lst):", "completion": "\n    return ' '.join(lst)"} 
+{"prompt": "class Animal:", "completion": "\n    def __init__(self, species, age):\n        self.species = species\n        self.age = age"} 
+{"prompt": "a = Animal('Dog', 5)", "completion": "\nprint(a.species, a.age)"} 
+{"prompt": "public class Animal {", "completion": "\n    String species;\n    int age;\n    Animal(String species, int age) {\n        this.species = species;\n        this.age = age;\n    }\n}"} 
+{"prompt": "Animal a = new Animal('Cat', 3);", "completion": "\nSystem.out.println(a.species + ' ' + a.age);"} 
+{"prompt": "function reverseArray(arr) {", "completion": "\n    return arr.reverse();\n}"} 
+{"prompt": "function sumArray(arr) {", "completion": "\n    return arr.reduce((a,b) => a+b, 0);\n}"} 
+{"prompt": "def palindrome(s):", "completion": "\n    return s == s[::-1]"} 
+{"prompt": "def contains_digit(s):", "completion": "\n    return any(c.isdigit() for c in s)"} 
+{"prompt": "def merge_lists(a, b):", "completion": "\n    return a + b"} 
+{"prompt": "public int factorial(int n) {", "completion": "\n    if(n == 0) return 1;\n    return n * factorial(n-1);\n}"} 
+{"prompt": "public boolean isPalindrome(String s) {", "completion": "\n    return s.equals(new StringBuilder(s).reverse().toString());\n}"} 
+{"prompt": "document.querySelector('#btn').addEventListener('click', () => {", "completion": "\n    alert('Clicked!');\n});"} 
+{"prompt": "const greet = name => {", "completion": "\n    console.log(`Hello ${name}`);\n}"} 
+{"prompt": "function filterEven(arr) {", "completion": "\n    return arr.filter(x => x % 2 === 0);\n}"} 
+{"prompt": "def intersect(a, b):", "completion": "\n    return [x for x in a if x in b]"} 
+{"prompt": "def union(a, b):", "completion": "\n    return list(set(a) | set(b))"} 
+{"prompt": "def difference(a, b):", "completion": "\n    return [x for x in a if x not in b]"} 
+{"prompt": "public List<Integer> intersectLists(List<Integer> a, List<Integer> b) {", "completion": "\n    return a.stream().filter(b::contains).collect(Collectors.toList());\n}"} 
+{"prompt": "public List<Integer> unionLists(List<Integer> a, List<Integer> b) {", "completion": "\n    Set<Integer> set = new HashSet<>();\n    set.addAll(a);\n    set.addAll(b);\n    return new ArrayList<>(set);\n}"} 
+{"prompt": "public List<Integer> differenceLists(List<Integer> a, List<Integer> b) {", "completion": "\n    return a.stream().filter(x -> !b.contains(x)).collect(Collectors.toList());\n}"} 
