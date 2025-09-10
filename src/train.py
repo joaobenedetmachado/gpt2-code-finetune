@@ -33,3 +33,17 @@ training_args = TrainingArguments(
     prediction_loss_only=True,
     fp16=torch.cuda.is_available(),  # mixed precision se tiver GPU
 )
+
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    data_collator=data_collator,
+    train_dataset=train_dataset,
+)
+
+trainer.train()
+
+trainer.save_model(OUTPUT_DIR)
+tokenizer.save_pretrained(OUTPUT_DIR)
+
+print(f"Modelo fine-tuned salvo em: {OUTPUT_DIR}")

@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual env
+.venv/
+env/
+venv/
+ENV/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Modelos treinados e checkpoints
+checkpoint-*/
+fine_tuned_code/
+*.bin
+*.pt
+*.h5
+*.ckpt
+
+# Datasets grandes
+*.csv
+*.jsonl
+*.txt
+
+# Sistema
+.DS_Store
+Thumbs.db
