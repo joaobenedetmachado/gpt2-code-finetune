@@ -20,14 +20,24 @@ while True:
 
     outputs = model.generate(
         **inputs,
-        max_length=50,
+        max_length=20,
         do_sample=True,
-        temperature=0.8,
+        temperature=0.1,
         top_k=50,
         top_p=0.95,
         pad_token_id=tokenizer.eos_token_id
     )
 
     generated_code = tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+    try:
+        exec(generated_code, {})
+        print(" codigo rodou")
+        with open("data/clean_dataset.txt", "a") as f:
+            f.write(generated_code + "\n")
+    except Exception as e:
+        print("erro ao rodar:", e)
+
+
     print("\n -- codigo gerado --")
     print(generated_code)
